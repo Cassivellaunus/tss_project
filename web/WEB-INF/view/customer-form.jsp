@@ -5,6 +5,7 @@
     <div class="row align-self-center w-75">
         <div class="col-12">
         <form:form action="saveCustomer" modelAttribute="customer" method="post">
+            <form:hidden path="id"/>
                 <div class="row">
                     <div class="input-field col s6">
                         <form:input path="firstName" type="text" class="validate"/>
