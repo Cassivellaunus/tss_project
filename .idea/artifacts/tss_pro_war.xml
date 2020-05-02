@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tss_pro:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/tss_pro_war</output-path>
+    <root id="archive" name="tss_pro_war.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="tss_project" />
+          <element id="jpa-descriptors" facet="tss_project/jpa/JPA" />
+          <element id="library" level="application" name="material" />
+          <element id="library" level="application" name="material.indigo-pink" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring Webflow-2.4.0" />
+          <element id="library" level="project" name="Spring Data JPA-2.2.4.RELEASE" />
+          <element id="library" level="project" name="Spring Web Services-2.0.2" />
+          <element id="library" level="project" name="Spring Integration-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring Batch-2.2.6" />
+          <element id="library" level="project" name="Spring Security-5.2.1" />
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.19.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/c3p0-0.9.1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/hibernate-c3p0-5.4.14.Final.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/mchange-commons-java-0.2.20.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jstl-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="tss_project/web/Web" />
+    </root>
+  </artifact>
+</component>
