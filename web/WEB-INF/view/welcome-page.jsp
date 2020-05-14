@@ -2,6 +2,7 @@
 <%@include file="shared/header.jspf" %>
 
 <h4>Welcome to the main page.</h4>
+
 <h2 class="light-green lighten-1">Author</h2>
 <h4>Krystian Budulski</h4>
 <h2 class="pink lighten-1">Stack</h2>
