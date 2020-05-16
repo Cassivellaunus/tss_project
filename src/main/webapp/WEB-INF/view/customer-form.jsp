@@ -1,7 +1,7 @@
 <%@include file="shared/navbar.jspf" %>
 <%@include file="shared/header.jspf" %>
 
-<div class="container d-flex h-90 justify-content-center">
+<div class="container d-flex justify-content-center" style="height: 90%">
     <div class="row align-self-center w-75">
         <div class="col-12">
         <form:form action="saveCustomer" modelAttribute="customer" method="post">

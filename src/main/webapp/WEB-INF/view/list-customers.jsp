@@ -1,6 +1,6 @@
 <%@include file="shared/navbar.jspf" %>
 <%@include file="shared/header.jspf" %>
-<div class="container d-flex h-90 justify-content-center">
+<div class="container d-flex justify-content-center" style="height: 90%">
     <div class="row align-self-center w-100">
         <div class="col">
 
@@ -8,7 +8,7 @@
                     class="material-icons left">person_add</i>Add customer</a>
 
             <table class="striped highlight centered responsive-table w-100">
-                <tr class="orange">
+                <tr class="orange text-center">
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>

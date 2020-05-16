@@ -1,14 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="tss_pro:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/tss_pro_war</output-path>
-    <root id="archive" name="tss_pro_war.war">
+  <artifact type="war" name="tss_project_m:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/tss_project_m_war</output-path>
+    <root id="archive" name="tss_project_m_war.war">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="tss_project" />
-          <element id="jpa-descriptors" facet="tss_project/jpa/JPA" />
-          <element id="library" level="application" name="material" />
           <element id="library" level="application" name="material.indigo-pink" />
+          <element id="library" level="application" name="material" />
           <element id="library" level="application" name="bootstrap" />
+          <element id="jpa-descriptors" facet="tss_project/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
@@ -23,14 +23,15 @@
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.19.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/c3p0-0.9.1.2.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/hibernate-c3p0-5.4.14.Final.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/mchange-commons-java-0.2.20.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/hibernate-c3p0-5.4.14.Final.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/jstl-1.2.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.9" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="tss_project/web/Web" />
