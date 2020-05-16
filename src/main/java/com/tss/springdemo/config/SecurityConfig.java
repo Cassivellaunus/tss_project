@@ -5,20 +5,23 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
+
+import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private final DataSource securityDataSource;
+
+    public SecurityConfig(DataSource securityDataSource) {
+        this.securityDataSource = securityDataSource;
+    }
+
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-        User.UserBuilder users = User.withDefaultPasswordEncoder();
-
-        auth.inMemoryAuthentication()
-                .withUser(users.username("Mike").password("123").roles("USER"))
-                .withUser(users.username("Walter").password("123").roles("USER", "ADMIN"));
+        auth.jdbcAuthentication().dataSource(securityDataSource);
     }
 
     @Override

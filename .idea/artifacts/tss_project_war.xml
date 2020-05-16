@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tss_project:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>tss_project</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="tss_project-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="tss_project:war exploded" />
+    </root>
+  </artifact>
+</component>
